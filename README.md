@@ -8,34 +8,25 @@
   </a>
 </p>
 
-<p align='center'>
-<strong>Manifest template²</strong>
+  <h1 align="center">Portfolio backend template</h1>
 
 ## How to use this template ?
 
-Manifest template² is the template to create [Manifest templates](https://manifest.build/templates). This template will provide you an initial Manifest backend ready to start building your own template.
+This template will provide you an initial Manifest backend ready to build a 
 
-To use it, go to its [GitHub template repository page](https://github.com/mnfst/manifest-template-template) and click on "Use this template". Set the name of your repository and its visibility to **public**.
+To use it, click on "Use this template". Set the name of your repository and click "create repository".
 
-Once your repository is created, follow those steps:
 
-- On your newly created GitHub repo page, click on "settings" and check the **Template repository** checkbox
-- Create your backend editing the `manifest/backend.yml` file
-- Place your handlers in `manifest/handlers`
-- Please do not touch the following files and folders: `.vscode`, `.gitignore`, `Dockerfile` and the `package.json` scripts.
-- Ensure that main branch is called **main**.
-- In `package.json`, adapt the name, description and version of your template.
-
-Then you can adapt the `README.md` (this file !)
-
-- Replace the main title ("Manifest template²") by the title of your template
-- Adapt the description below introducing briefly the template
-- Adapt the install and run sections below if needed
-- Remove this paragraph 👋
 
 ## Description
 
-Welcome to your [Manifest](https://github.com/mnfst/manifest) template ! Add here a small description.
+This template provides a ready-to-use Manifest backend for a personal portfolio.
+It includes:
+
+- Manage your projects dynamically
+- Automatic generation of multiple image sizes upon upload
+- Storage dedicated to your portfolio visuals
+- A simple contact form
 
 ## Installation
 
@@ -63,6 +54,11 @@ Seeds some dummy data for your entities:
 ```bash
 npm run manifest:seed
 ```
+
+## Next steps
+
+1. [Create your frontend](https://manifest.build/docs/crud) with this Manifest backend and your favorite frontend stack. ✨
+2. [Deploy your Backend](https://manifest.build/docs/deploy) on production. 📦
 
 ## Community & Resources
 
