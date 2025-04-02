@@ -1,22 +1,31 @@
-name: My pet app 🐾
+name: Personal portfolio
 entities:
-  Owner:
-    properties:
-      - name
-      - { name: birthdate, type: date }
-
-  Cat:
-    properties:
-      - name
-      - { name: age, type: number }
-      - { name: birthdate, type: date }
-    belongsTo:
-      - Owner
-
-  Homepage:
-    nameSingular: Home content
-    single: true
+  Project:
     properties:
       - title
+      - excerpt
+      - role
+      - { name: date, type: date }
+      - { name: url, type: link }
+      - {
+          name: photo,
+          type: image,
+          options:
+            {
+              sizes:
+                {
+                  small: { height: 403, width: 805 },
+                  social: { height: 630, width: 1200 },
+                  large: { height: 806, width: 1610 },
+                },
+            },
+        }
       - { name: description, type: richText }
-      - { name: cover, type: image }
+      - seoTitle
+      - seoDescription
+
+  Contacts:
+    properties:
+      - name
+      - email
+      - { name: message, type: text }
