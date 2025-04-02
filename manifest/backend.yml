@@ -2,8 +2,8 @@ name: Personal portfolio
 entities:
   Project:
     properties:
-      - title
-      - excerpt
+      - { name: title, validation: { required: true } }
+      - { name: excerpt, validation: { required: true } }
       - role
       - { name: date, type: date }
       - { name: url, type: link }
@@ -26,6 +26,6 @@ entities:
 
   Contacts:
     properties:
-      - name
-      - email
-      - { name: message, type: text }
+      - { name: name, type: string, validation: { required: true } }
+      - { name: email, type: email, validation: { required: true } }
+      - { name: message, type: text, validation: { required: true } }
