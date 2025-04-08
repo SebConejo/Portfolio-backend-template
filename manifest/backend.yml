@@ -24,7 +24,7 @@ entities:
       - seoTitle
       - seoDescription
 
-  Contacts:
+  Contact:
     properties:
       - { name: name, type: string, validation: { required: true } }
       - { name: email, type: email, validation: { required: true } }
